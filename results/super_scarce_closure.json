@@ -1,0 +1,2008 @@
+{
+  "split": "super_scarce",
+  "max_per_split": 0,
+  "points_per_case": 32768,
+  "cases": {
+    "train": [
+      {
+        "run": "run_39",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8620036,
+        "native_area_m2": 33.433851349327426,
+        "sampled_cells": 32796,
+        "cd_source": 0.3351154,
+        "cd_full": {
+          "pressure": 0.3087367922788991,
+          "friction": 0.026377214553925523,
+          "total": 0.3351140068328246
+        },
+        "cd_sampled": {
+          "pressure": 0.3118834551804091,
+          "friction": 0.026505484290617814,
+          "total": 0.33838893947102694
+        },
+        "full_minus_source": -1.3931671754008335e-06,
+        "sampled_minus_full": 0.0032749326382023325
+      },
+      {
+        "run": "run_49",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9561604,
+        "native_area_m2": 36.93594059303422,
+        "sampled_cells": 32799,
+        "cd_source": 0.3153477,
+        "cd_full": {
+          "pressure": 0.28843756386278685,
+          "friction": 0.026908746330212993,
+          "total": 0.31534631019299986
+        },
+        "cd_sampled": {
+          "pressure": 0.28940515439100617,
+          "friction": 0.026867712678612418,
+          "total": 0.3162728670696186
+        },
+        "full_minus_source": -1.3898070001516771e-06,
+        "sampled_minus_full": 0.0009265568766187449
+      },
+      {
+        "run": "run_85",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8291642,
+        "native_area_m2": 33.85034850023675,
+        "sampled_cells": 32792,
+        "cd_source": 0.2454145,
+        "cd_full": {
+          "pressure": 0.21996534412579397,
+          "friction": 0.025447861690473802,
+          "total": 0.24541320581626777
+        },
+        "cd_sampled": {
+          "pressure": 0.21757495624640838,
+          "friction": 0.025361551069323522,
+          "total": 0.2429365073157319
+        },
+        "full_minus_source": -1.2941837322366645e-06,
+        "sampled_minus_full": -0.002476698500535862
+      },
+      {
+        "run": "run_115",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8105652,
+        "native_area_m2": 35.2510028221831,
+        "sampled_cells": 32793,
+        "cd_source": 0.3401304,
+        "cd_full": {
+          "pressure": 0.31523526103955124,
+          "friction": 0.024893875228073806,
+          "total": 0.34012913626762503
+        },
+        "cd_sampled": {
+          "pressure": 0.31636400147362154,
+          "friction": 0.024980103982377336,
+          "total": 0.34134410545599886
+        },
+        "full_minus_source": -1.2637323749675744e-06,
+        "sampled_minus_full": 0.0012149691883738267
+      },
+      {
+        "run": "run_186",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7943464,
+        "native_area_m2": 35.95593806761556,
+        "sampled_cells": 32783,
+        "cd_source": 0.3255898,
+        "cd_full": {
+          "pressure": 0.2987849484305672,
+          "friction": 0.026803517144709944,
+          "total": 0.32558846557527715
+        },
+        "cd_sampled": {
+          "pressure": 0.3030221073873731,
+          "friction": 0.02677562078678297,
+          "total": 0.3297977281741561
+        },
+        "full_minus_source": -1.3344247228319617e-06,
+        "sampled_minus_full": 0.004209262598878938
+      },
+      {
+        "run": "run_220",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8185503,
+        "native_area_m2": 34.12219351289239,
+        "sampled_cells": 32793,
+        "cd_source": 0.2545617,
+        "cd_full": {
+          "pressure": 0.2248634208344488,
+          "friction": 0.029696739408996767,
+          "total": 0.2545601602434456
+        },
+        "cd_sampled": {
+          "pressure": 0.22517073972337492,
+          "friction": 0.02978507993383899,
+          "total": 0.2549558196572139
+        },
+        "full_minus_source": -1.5397565544250646e-06,
+        "sampled_minus_full": 0.00039565941376834557
+      },
+      {
+        "run": "run_277",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8024205,
+        "native_area_m2": 37.81653248216472,
+        "sampled_cells": 32780,
+        "cd_source": 0.3162365,
+        "cd_full": {
+          "pressure": 0.2882366094982072,
+          "friction": 0.027998480010165597,
+          "total": 0.31623508950837276
+        },
+        "cd_sampled": {
+          "pressure": 0.28676290410752636,
+          "friction": 0.028077248194035682,
+          "total": 0.31484015230156204
+        },
+        "full_minus_source": -1.410491627218402e-06,
+        "sampled_minus_full": -0.0013949372068107202
+      },
+      {
+        "run": "run_357",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8222613,
+        "native_area_m2": 38.03821269960838,
+        "sampled_cells": 32775,
+        "cd_source": 0.3111597,
+        "cd_full": {
+          "pressure": 0.28224267843544404,
+          "friction": 0.028915549138486988,
+          "total": 0.311158227573931
+        },
+        "cd_sampled": {
+          "pressure": 0.28859919552994867,
+          "friction": 0.028945788803508735,
+          "total": 0.3175449843334574
+        },
+        "full_minus_source": -1.472426068960253e-06,
+        "sampled_minus_full": 0.00638675675952638
+      },
+      {
+        "run": "run_412",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8180844,
+        "native_area_m2": 37.33019356175543,
+        "sampled_cells": 32797,
+        "cd_source": 0.3162548,
+        "cd_full": {
+          "pressure": 0.2889380167449366,
+          "friction": 0.02731538781650017,
+          "total": 0.31625340456143675
+        },
+        "cd_sampled": {
+          "pressure": 0.2861466187328628,
+          "friction": 0.02727969279011823,
+          "total": 0.313426311522981
+        },
+        "full_minus_source": -1.3954385632564126e-06,
+        "sampled_minus_full": -0.0028270930384557413
+      },
+      {
+        "run": "run_455",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9869492,
+        "native_area_m2": 37.306297920424605,
+        "sampled_cells": 32795,
+        "cd_source": 0.2737205,
+        "cd_full": {
+          "pressure": 0.24700357574490428,
+          "friction": 0.026715549998184703,
+          "total": 0.273719125743089
+        },
+        "cd_sampled": {
+          "pressure": 0.24737844299857115,
+          "friction": 0.026577663064357056,
+          "total": 0.2739561060629282
+        },
+        "full_minus_source": -1.374256910990912e-06,
+        "sampled_minus_full": 0.00023698031983920842
+      },
+      {
+        "run": "run_477",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8578107,
+        "native_area_m2": 34.85439167310083,
+        "sampled_cells": 32789,
+        "cd_source": 0.2950185,
+        "cd_full": {
+          "pressure": 0.2697483631746876,
+          "friction": 0.025268814244265147,
+          "total": 0.2950171774189527
+        },
+        "cd_sampled": {
+          "pressure": 0.2733481406353517,
+          "friction": 0.025281905555051238,
+          "total": 0.2986300461904029
+        },
+        "full_minus_source": -1.32258104729166e-06,
+        "sampled_minus_full": 0.003612868771450173
+      }
+    ],
+    "val": [
+      {
+        "run": "run_4",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8140177,
+        "native_area_m2": 33.89544989590216,
+        "sampled_cells": 32804,
+        "cd_source": 0.2882351,
+        "cd_full": {
+          "pressure": 0.26013568170969953,
+          "friction": 0.028097966445534833,
+          "total": 0.28823364815523433
+        },
+        "cd_sampled": {
+          "pressure": 0.2629086983190303,
+          "friction": 0.02819789905089811,
+          "total": 0.2911065973699284
+        },
+        "full_minus_source": -1.4518447656874933e-06,
+        "sampled_minus_full": 0.002872949214694054
+      },
+      {
+        "run": "run_22",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8850602,
+        "native_area_m2": 35.4716466284786,
+        "sampled_cells": 32793,
+        "cd_source": 0.2958881,
+        "cd_full": {
+          "pressure": 0.26927292243871864,
+          "friction": 0.02661383291656255,
+          "total": 0.2958867553552812
+        },
+        "cd_sampled": {
+          "pressure": 0.2688765656947503,
+          "friction": 0.026556651169591085,
+          "total": 0.29543321686434143
+        },
+        "full_minus_source": -1.344644718792587e-06,
+        "sampled_minus_full": -0.0004535384909397644
+      },
+      {
+        "run": "run_56",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7506981,
+        "native_area_m2": 33.76150686315959,
+        "sampled_cells": 32816,
+        "cd_source": 0.2987496,
+        "cd_full": {
+          "pressure": 0.2686406706631835,
+          "friction": 0.030107378687889305,
+          "total": 0.2987480493510728
+        },
+        "cd_sampled": {
+          "pressure": 0.26785892192067434,
+          "friction": 0.03018953424324843,
+          "total": 0.2980484561639228
+        },
+        "full_minus_source": -1.550648927206577e-06,
+        "sampled_minus_full": -0.0006995931871500161
+      },
+      {
+        "run": "run_109",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9275074,
+        "native_area_m2": 33.646018302178064,
+        "sampled_cells": 32791,
+        "cd_source": 0.2603153,
+        "cd_full": {
+          "pressure": 0.23273821408099157,
+          "friction": 0.027575686818951117,
+          "total": 0.26031390089994266
+        },
+        "cd_sampled": {
+          "pressure": 0.23589201103879004,
+          "friction": 0.02754112837445489,
+          "total": 0.2634331394132449
+        },
+        "full_minus_source": -1.399100057364322e-06,
+        "sampled_minus_full": 0.003119238513302258
+      },
+      {
+        "run": "run_150",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8194133,
+        "native_area_m2": 33.84794004168083,
+        "sampled_cells": 32779,
+        "cd_source": 0.2921707,
+        "cd_full": {
+          "pressure": 0.26290136415717225,
+          "friction": 0.029267812343852544,
+          "total": 0.2921691765010248
+        },
+        "cd_sampled": {
+          "pressure": 0.26060390071836487,
+          "friction": 0.029332685556078285,
+          "total": 0.28993658627444313
+        },
+        "full_minus_source": -1.5234989751977679e-06,
+        "sampled_minus_full": -0.0022325902265816766
+      },
+      {
+        "run": "run_165",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9091380,
+        "native_area_m2": 36.56188773561949,
+        "sampled_cells": 32805,
+        "cd_source": 0.2958114,
+        "cd_full": {
+          "pressure": 0.266967616162788,
+          "friction": 0.028842325954792004,
+          "total": 0.29580994211758005
+        },
+        "cd_sampled": {
+          "pressure": 0.2675708224490003,
+          "friction": 0.028848038227917757,
+          "total": 0.2964188606769181
+        },
+        "full_minus_source": -1.4578824199529272e-06,
+        "sampled_minus_full": 0.0006089185593380342
+      },
+      {
+        "run": "run_177",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8113453,
+        "native_area_m2": 33.65109826796345,
+        "sampled_cells": 32800,
+        "cd_source": 0.2776176,
+        "cd_full": {
+          "pressure": 0.24678372592490008,
+          "friction": 0.030832266592387296,
+          "total": 0.27761599251728736
+        },
+        "cd_sampled": {
+          "pressure": 0.24491741856975824,
+          "friction": 0.030869630101878757,
+          "total": 0.275787048671637
+        },
+        "full_minus_source": -1.6074827126622004e-06,
+        "sampled_minus_full": -0.0018289438456503548
+      },
+      {
+        "run": "run_191",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8635804,
+        "native_area_m2": 36.019855255525684,
+        "sampled_cells": 32788,
+        "cd_source": 0.2666815,
+        "cd_full": {
+          "pressure": 0.23966352182883047,
+          "friction": 0.027016552747432657,
+          "total": 0.26668007457626314
+        },
+        "cd_sampled": {
+          "pressure": 0.240475899448365,
+          "friction": 0.027064842548491588,
+          "total": 0.26754074199685657
+        },
+        "full_minus_source": -1.4254237368782618e-06,
+        "sampled_minus_full": 0.0008606674205934306
+      },
+      {
+        "run": "run_228",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8630055,
+        "native_area_m2": 36.62040672056561,
+        "sampled_cells": 32791,
+        "cd_source": 0.2615466,
+        "cd_full": {
+          "pressure": 0.23622600855961606,
+          "friction": 0.025319264608673155,
+          "total": 0.26154527316828924
+        },
+        "cd_sampled": {
+          "pressure": 0.23532249456099977,
+          "friction": 0.025365037655230627,
+          "total": 0.2606875322162304
+        },
+        "full_minus_source": -1.3268317107795191e-06,
+        "sampled_minus_full": -0.0008577409520588164
+      },
+      {
+        "run": "run_234",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8243409,
+        "native_area_m2": 36.7829269630747,
+        "sampled_cells": 32797,
+        "cd_source": 0.296024,
+        "cd_full": {
+          "pressure": 0.26974264344950316,
+          "friction": 0.026280013822621073,
+          "total": 0.29602265727212423
+        },
+        "cd_sampled": {
+          "pressure": 0.2664398424261776,
+          "friction": 0.026398238044244335,
+          "total": 0.2928380804704219
+        },
+        "full_minus_source": -1.3427278757749406e-06,
+        "sampled_minus_full": -0.00318457680170231
+      },
+      {
+        "run": "run_241",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8167762,
+        "native_area_m2": 33.903360626044034,
+        "sampled_cells": 32806,
+        "cd_source": 0.2854459,
+        "cd_full": {
+          "pressure": 0.2556622030480642,
+          "friction": 0.029782177314019873,
+          "total": 0.2854443803620841
+        },
+        "cd_sampled": {
+          "pressure": 0.2580975602621389,
+          "friction": 0.029862434951880044,
+          "total": 0.287959995214019
+        },
+        "full_minus_source": -1.519637915892158e-06,
+        "sampled_minus_full": 0.002515614851934911
+      },
+      {
+        "run": "run_247",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7825548,
+        "native_area_m2": 32.7122780274364,
+        "sampled_cells": 32793,
+        "cd_source": 0.2998168,
+        "cd_full": {
+          "pressure": 0.2710865001556589,
+          "friction": 0.028728863352564315,
+          "total": 0.2998153635082232
+        },
+        "cd_sampled": {
+          "pressure": 0.2703012114295482,
+          "friction": 0.0286067415049059,
+          "total": 0.2989079529344541
+        },
+        "full_minus_source": -1.4364917768072694e-06,
+        "sampled_minus_full": -0.0009074105737690852
+      },
+      {
+        "run": "run_252",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8369601,
+        "native_area_m2": 35.60423204558997,
+        "sampled_cells": 32794,
+        "cd_source": 0.2741525,
+        "cd_full": {
+          "pressure": 0.24516528161547085,
+          "friction": 0.02898571811760238,
+          "total": 0.2741509997330732
+        },
+        "cd_sampled": {
+          "pressure": 0.24459557522287412,
+          "friction": 0.028998902949210818,
+          "total": 0.27359447817208493
+        },
+        "full_minus_source": -1.5002669268016078e-06,
+        "sampled_minus_full": -0.0005565215609882879
+      },
+      {
+        "run": "run_253",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8187510,
+        "native_area_m2": 33.53913573102297,
+        "sampled_cells": 32785,
+        "cd_source": 0.2546412,
+        "cd_full": {
+          "pressure": 0.22757503000827037,
+          "friction": 0.027064812618441875,
+          "total": 0.25463984262671224
+        },
+        "cd_sampled": {
+          "pressure": 0.22433401850696919,
+          "friction": 0.02715372079827683,
+          "total": 0.25148773930524604
+        },
+        "full_minus_source": -1.3573732877691924e-06,
+        "sampled_minus_full": -0.003152103321466204
+      },
+      {
+        "run": "run_260",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8234041,
+        "native_area_m2": 37.240430391304514,
+        "sampled_cells": 32801,
+        "cd_source": 0.2810435,
+        "cd_full": {
+          "pressure": 0.25369374403219014,
+          "friction": 0.02734835473932989,
+          "total": 0.28104209877152003
+        },
+        "cd_sampled": {
+          "pressure": 0.2571850862888967,
+          "friction": 0.027260001823327457,
+          "total": 0.28444508811222413
+        },
+        "full_minus_source": -1.4012284799691521e-06,
+        "sampled_minus_full": 0.003402989340704099
+      },
+      {
+        "run": "run_271",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8448796,
+        "native_area_m2": 33.77504516217195,
+        "sampled_cells": 32777,
+        "cd_source": 0.2686385,
+        "cd_full": {
+          "pressure": 0.2414508516813054,
+          "friction": 0.02718626564788942,
+          "total": 0.2686371173291948
+        },
+        "cd_sampled": {
+          "pressure": 0.23771603168822336,
+          "friction": 0.0271674149765554,
+          "total": 0.26488344666477875
+        },
+        "full_minus_source": -1.3826708051833947e-06,
+        "sampled_minus_full": -0.0037536706644160645
+      },
+      {
+        "run": "run_275",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9429532,
+        "native_area_m2": 34.529188530972974,
+        "sampled_cells": 32798,
+        "cd_source": 0.3005843,
+        "cd_full": {
+          "pressure": 0.27409427504744754,
+          "friction": 0.0264886748292421,
+          "total": 0.30058294987668965
+        },
+        "cd_sampled": {
+          "pressure": 0.2742494826040917,
+          "friction": 0.026435280312746157,
+          "total": 0.3006847629168379
+        },
+        "full_minus_source": -1.350123310372986e-06,
+        "sampled_minus_full": 0.00010181304014822423
+      },
+      {
+        "run": "run_298",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7527662,
+        "native_area_m2": 33.53149074636072,
+        "sampled_cells": 32794,
+        "cd_source": 0.2447429,
+        "cd_full": {
+          "pressure": 0.21680429069921303,
+          "friction": 0.027937136535665805,
+          "total": 0.24474142723487885
+        },
+        "cd_sampled": {
+          "pressure": 0.21536221640043682,
+          "friction": 0.02802854444759362,
+          "total": 0.24339076084803044
+        },
+        "full_minus_source": -1.472765121163233e-06,
+        "sampled_minus_full": -0.0013506663868484148
+      },
+      {
+        "run": "run_303",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9119098,
+        "native_area_m2": 34.2132284586165,
+        "sampled_cells": 32783,
+        "cd_source": 0.306033,
+        "cd_full": {
+          "pressure": 0.27957145614703416,
+          "friction": 0.026460180654931387,
+          "total": 0.30603163680196555
+        },
+        "cd_sampled": {
+          "pressure": 0.2802571711353134,
+          "friction": 0.026521194678626698,
+          "total": 0.3067783658139401
+        },
+        "full_minus_source": -1.3631980344541716e-06,
+        "sampled_minus_full": 0.000746729011974534
+      },
+      {
+        "run": "run_311",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8354690,
+        "native_area_m2": 35.21322929158654,
+        "sampled_cells": 32792,
+        "cd_source": 0.2666995,
+        "cd_full": {
+          "pressure": 0.23911848190390378,
+          "friction": 0.027579615991752914,
+          "total": 0.2666980978956567
+        },
+        "cd_sampled": {
+          "pressure": 0.23590928356330595,
+          "friction": 0.02759832545942453,
+          "total": 0.26350760902273046
+        },
+        "full_minus_source": -1.4021043432954627e-06,
+        "sampled_minus_full": -0.0031904888729262226
+      },
+      {
+        "run": "run_321",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8224694,
+        "native_area_m2": 34.42089594805448,
+        "sampled_cells": 32810,
+        "cd_source": 0.2592043,
+        "cd_full": {
+          "pressure": 0.23015146658731603,
+          "friction": 0.0290513431104751,
+          "total": 0.25920280969779114
+        },
+        "cd_sampled": {
+          "pressure": 0.2357588125035716,
+          "friction": 0.0290156400589378,
+          "total": 0.2647744525625094
+        },
+        "full_minus_source": -1.4903022088619267e-06,
+        "sampled_minus_full": 0.005571642864718285
+      },
+      {
+        "run": "run_324",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7939884,
+        "native_area_m2": 38.26336328900438,
+        "sampled_cells": 32789,
+        "cd_source": 0.3014326,
+        "cd_full": {
+          "pressure": 0.27315218332933616,
+          "friction": 0.02827894940168228,
+          "total": 0.30143113273101846
+        },
+        "cd_sampled": {
+          "pressure": 0.267140089282176,
+          "friction": 0.028257023136380986,
+          "total": 0.295397112418557
+        },
+        "full_minus_source": -1.4672689815364848e-06,
+        "sampled_minus_full": -0.006034020312461474
+      },
+      {
+        "run": "run_328",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9563380,
+        "native_area_m2": 35.52768280157821,
+        "sampled_cells": 32804,
+        "cd_source": 0.2652177,
+        "cd_full": {
+          "pressure": 0.2385898363842834,
+          "friction": 0.02662654432276692,
+          "total": 0.26521638070705034
+        },
+        "cd_sampled": {
+          "pressure": 0.24080198745536077,
+          "friction": 0.026666512693148143,
+          "total": 0.2674685001485089
+        },
+        "full_minus_source": -1.3192929496641526e-06,
+        "sampled_minus_full": 0.0022521194414585888
+      },
+      {
+        "run": "run_341",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7839943,
+        "native_area_m2": 36.71480538720786,
+        "sampled_cells": 32793,
+        "cd_source": 0.2725529,
+        "cd_full": {
+          "pressure": 0.2480557819052383,
+          "friction": 0.024495880774912403,
+          "total": 0.2725516626801507
+        },
+        "cd_sampled": {
+          "pressure": 0.2501943921849198,
+          "friction": 0.024461716916390874,
+          "total": 0.27465610910131066
+        },
+        "full_minus_source": -1.2373198493009774e-06,
+        "sampled_minus_full": 0.002104446421159978
+      },
+      {
+        "run": "run_352",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7606276,
+        "native_area_m2": 34.520661196859336,
+        "sampled_cells": 32795,
+        "cd_source": 0.2925117,
+        "cd_full": {
+          "pressure": 0.26197543673715556,
+          "friction": 0.030534712189045302,
+          "total": 0.29251014892620086
+        },
+        "cd_sampled": {
+          "pressure": 0.26418981120011015,
+          "friction": 0.030453570850828053,
+          "total": 0.2946433820509382
+        },
+        "full_minus_source": -1.5510737991220047e-06,
+        "sampled_minus_full": 0.0021332331247373437
+      },
+      {
+        "run": "run_366",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8741165,
+        "native_area_m2": 35.880559253409245,
+        "sampled_cells": 32795,
+        "cd_source": 0.2570202,
+        "cd_full": {
+          "pressure": 0.23055966159607305,
+          "friction": 0.02645917247556143,
+          "total": 0.2570188340716345
+        },
+        "cd_sampled": {
+          "pressure": 0.2249187468560068,
+          "friction": 0.02649149187186987,
+          "total": 0.25141023872787666
+        },
+        "full_minus_source": -1.365928365471003e-06,
+        "sampled_minus_full": -0.0056085953437578495
+      },
+      {
+        "run": "run_380",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9744343,
+        "native_area_m2": 35.14788337911776,
+        "sampled_cells": 32787,
+        "cd_source": 0.2676491,
+        "cd_full": {
+          "pressure": 0.2397492869789289,
+          "friction": 0.027898349873336822,
+          "total": 0.2676476368522657
+        },
+        "cd_sampled": {
+          "pressure": 0.24283187532450087,
+          "friction": 0.0279000888484502,
+          "total": 0.2707319641729511
+        },
+        "full_minus_source": -1.4631477342486043e-06,
+        "sampled_minus_full": 0.003084327320685365
+      },
+      {
+        "run": "run_390",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8598730,
+        "native_area_m2": 36.07029739350038,
+        "sampled_cells": 32783,
+        "cd_source": 0.2951659,
+        "cd_full": {
+          "pressure": 0.26872520128855093,
+          "friction": 0.026439310947425472,
+          "total": 0.2951645122359764
+        },
+        "cd_sampled": {
+          "pressure": 0.2655684414845253,
+          "friction": 0.026389691782075276,
+          "total": 0.2919581332666006
+        },
+        "full_minus_source": -1.38776402358598e-06,
+        "sampled_minus_full": -0.0032063789693758116
+      },
+      {
+        "run": "run_401",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8238000,
+        "native_area_m2": 37.63426846859756,
+        "sampled_cells": 32804,
+        "cd_source": 0.2820272,
+        "cd_full": {
+          "pressure": 0.25445190761378195,
+          "friction": 0.02757390020607905,
+          "total": 0.282025807819861
+        },
+        "cd_sampled": {
+          "pressure": 0.26016842850416555,
+          "friction": 0.02749433938110817,
+          "total": 0.28766276788527373
+        },
+        "full_minus_source": -1.3921801390037736e-06,
+        "sampled_minus_full": 0.005636960065412755
+      },
+      {
+        "run": "run_423",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9068705,
+        "native_area_m2": 35.31482789125012,
+        "sampled_cells": 32798,
+        "cd_source": 0.2730932,
+        "cd_full": {
+          "pressure": 0.24600762838920745,
+          "friction": 0.027084216631721315,
+          "total": 0.27309184502092876
+        },
+        "cd_sampled": {
+          "pressure": 0.24755666792229464,
+          "friction": 0.02708537352342449,
+          "total": 0.27464204144571913
+        },
+        "full_minus_source": -1.3549790712219512e-06,
+        "sampled_minus_full": 0.0015501964247903732
+      },
+      {
+        "run": "run_441",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8220438,
+        "native_area_m2": 34.447619656730225,
+        "sampled_cells": 32776,
+        "cd_source": 0.2784356,
+        "cd_full": {
+          "pressure": 0.2487497312213001,
+          "friction": 0.029684302462882128,
+          "total": 0.27843403368418224
+        },
+        "cd_sampled": {
+          "pressure": 0.25104322493563386,
+          "friction": 0.02956111507491463,
+          "total": 0.28060434001054846
+        },
+        "full_minus_source": -1.566315817769226e-06,
+        "sampled_minus_full": 0.0021703063263662226
+      },
+      {
+        "run": "run_447",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7991551,
+        "native_area_m2": 32.57897672349865,
+        "sampled_cells": 32804,
+        "cd_source": 0.2768114,
+        "cd_full": {
+          "pressure": 0.25021929535913423,
+          "friction": 0.02659072492544801,
+          "total": 0.27681002028458224
+        },
+        "cd_sampled": {
+          "pressure": 0.25054581945445953,
+          "friction": 0.026518065388492974,
+          "total": 0.2770638848429525
+        },
+        "full_minus_source": -1.379715417748617e-06,
+        "sampled_minus_full": 0.000253864558370287
+      },
+      {
+        "run": "run_454",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8175651,
+        "native_area_m2": 36.186342485595276,
+        "sampled_cells": 32794,
+        "cd_source": 0.299128,
+        "cd_full": {
+          "pressure": 0.2727426638342279,
+          "friction": 0.026383955711949056,
+          "total": 0.299126619546177
+        },
+        "cd_sampled": {
+          "pressure": 0.27088021302088344,
+          "friction": 0.026440972154892488,
+          "total": 0.29732118517577594
+        },
+        "full_minus_source": -1.3804538230299812e-06,
+        "sampled_minus_full": -0.0018054343704010378
+      },
+      {
+        "run": "run_487",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8869765,
+        "native_area_m2": 35.3023669428763,
+        "sampled_cells": 32794,
+        "cd_source": 0.2643629,
+        "cd_full": {
+          "pressure": 0.23891718026602557,
+          "friction": 0.025444383408400908,
+          "total": 0.2643615636744265
+        },
+        "cd_sampled": {
+          "pressure": 0.2384387985880435,
+          "friction": 0.025373630057149158,
+          "total": 0.26381242864519266
+        },
+        "full_minus_source": -1.3363255735310275e-06,
+        "sampled_minus_full": -0.000549135029233816
+      }
+    ],
+    "test": [
+      {
+        "run": "run_11",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7792715,
+        "native_area_m2": 36.89119662115306,
+        "sampled_cells": 32787,
+        "cd_source": 0.3158833,
+        "cd_full": {
+          "pressure": 0.29093034052950056,
+          "friction": 0.024951641416593322,
+          "total": 0.3158819819460939
+        },
+        "cd_sampled": {
+          "pressure": 0.2923200568316757,
+          "friction": 0.02495869245804355,
+          "total": 0.3172787492897193
+        },
+        "full_minus_source": -1.3180539060742014e-06,
+        "sampled_minus_full": 0.0013967673436253714
+      },
+      {
+        "run": "run_12",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9357569,
+        "native_area_m2": 35.042673680765695,
+        "sampled_cells": 32804,
+        "cd_source": 0.2629017,
+        "cd_full": {
+          "pressure": 0.23496400986852203,
+          "friction": 0.027936279877669456,
+          "total": 0.2629002897461915
+        },
+        "cd_sampled": {
+          "pressure": 0.22884686146069796,
+          "friction": 0.02774591453587296,
+          "total": 0.25659277599657093
+        },
+        "full_minus_source": -1.410253808509232e-06,
+        "sampled_minus_full": -0.006307513749620575
+      },
+      {
+        "run": "run_19",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8663632,
+        "native_area_m2": 35.68237912656832,
+        "sampled_cells": 32777,
+        "cd_source": 0.3038487,
+        "cd_full": {
+          "pressure": 0.27945179508465706,
+          "friction": 0.02439567543540198,
+          "total": 0.30384747052005906
+        },
+        "cd_sampled": {
+          "pressure": 0.27871940889843655,
+          "friction": 0.02447662787929726,
+          "total": 0.3031960367777338
+        },
+        "full_minus_source": -1.2294799409673374e-06,
+        "sampled_minus_full": -0.0006514337423252359
+      },
+      {
+        "run": "run_20",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8270173,
+        "native_area_m2": 34.71989047823324,
+        "sampled_cells": 32793,
+        "cd_source": 0.2751891,
+        "cd_full": {
+          "pressure": 0.24687073937548665,
+          "friction": 0.028316858394805567,
+          "total": 0.2751875977702922
+        },
+        "cd_sampled": {
+          "pressure": 0.24308045089444794,
+          "friction": 0.028353247189362548,
+          "total": 0.27143369808381046
+        },
+        "full_minus_source": -1.5022297077948998e-06,
+        "sampled_minus_full": -0.0037538996864817653
+      },
+      {
+        "run": "run_24",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7937934,
+        "native_area_m2": 38.783681089378945,
+        "sampled_cells": 32795,
+        "cd_source": 0.2629866,
+        "cd_full": {
+          "pressure": 0.23619942382314776,
+          "friction": 0.026785760474858936,
+          "total": 0.2629851842980067
+        },
+        "cd_sampled": {
+          "pressure": 0.23905063379345776,
+          "friction": 0.026775347223391362,
+          "total": 0.2658259810168491
+        },
+        "full_minus_source": -1.4157019933014325e-06,
+        "sampled_minus_full": 0.002840796718842409
+      },
+      {
+        "run": "run_26",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8687533,
+        "native_area_m2": 34.72575137809301,
+        "sampled_cells": 32806,
+        "cd_source": 0.2744479,
+        "cd_full": {
+          "pressure": 0.2466570656999574,
+          "friction": 0.027789366682925608,
+          "total": 0.274446432382883
+        },
+        "cd_sampled": {
+          "pressure": 0.24266566728276895,
+          "friction": 0.027722949837670024,
+          "total": 0.270388617120439
+        },
+        "full_minus_source": -1.4676171170013852e-06,
+        "sampled_minus_full": -0.004057815262444031
+      },
+      {
+        "run": "run_29",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9687292,
+        "native_area_m2": 33.816711229972896,
+        "sampled_cells": 32790,
+        "cd_source": 0.3283646,
+        "cd_full": {
+          "pressure": 0.30150944584071193,
+          "friction": 0.026853734233447713,
+          "total": 0.32836318007415966
+        },
+        "cd_sampled": {
+          "pressure": 0.29957715258694123,
+          "friction": 0.02699863514213069,
+          "total": 0.3265757877290719
+        },
+        "full_minus_source": -1.4199258403513326e-06,
+        "sampled_minus_full": -0.001787392345087735
+      },
+      {
+        "run": "run_41",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8901302,
+        "native_area_m2": 38.57111693842859,
+        "sampled_cells": 32790,
+        "cd_source": 0.2724442,
+        "cd_full": {
+          "pressure": 0.24535756330304925,
+          "friction": 0.027085268214275673,
+          "total": 0.2724428315173249
+        },
+        "cd_sampled": {
+          "pressure": 0.24878097208841551,
+          "friction": 0.02692713986532133,
+          "total": 0.27570811195373685
+        },
+        "full_minus_source": -1.3684826751236834e-06,
+        "sampled_minus_full": 0.0032652804364119437
+      },
+      {
+        "run": "run_55",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9771082,
+        "native_area_m2": 34.71824396428597,
+        "sampled_cells": 32787,
+        "cd_source": 0.271394,
+        "cd_full": {
+          "pressure": 0.24529145460212567,
+          "friction": 0.026101187751487384,
+          "total": 0.27139264235361305
+        },
+        "cd_sampled": {
+          "pressure": 0.24611967784252725,
+          "friction": 0.02604423824243445,
+          "total": 0.2721639160849617
+        },
+        "full_minus_source": -1.3576463869791056e-06,
+        "sampled_minus_full": 0.0007712737313486651
+      },
+      {
+        "run": "run_59",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8237019,
+        "native_area_m2": 33.882643645795085,
+        "sampled_cells": 32791,
+        "cd_source": 0.2793883,
+        "cd_full": {
+          "pressure": 0.2523758839459286,
+          "friction": 0.027011048113902373,
+          "total": 0.27938693205983095
+        },
+        "cd_sampled": {
+          "pressure": 0.24680994905040501,
+          "friction": 0.027097808278346135,
+          "total": 0.27390775732875117
+        },
+        "full_minus_source": -1.3679401690280812e-06,
+        "sampled_minus_full": -0.005479174731079783
+      },
+      {
+        "run": "run_108",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9608134,
+        "native_area_m2": 36.50331314976561,
+        "sampled_cells": 32802,
+        "cd_source": 0.2972321,
+        "cd_full": {
+          "pressure": 0.26992387293299847,
+          "friction": 0.02730681009916143,
+          "total": 0.2972306830321599
+        },
+        "cd_sampled": {
+          "pressure": 0.2743411853328393,
+          "friction": 0.027307831991742564,
+          "total": 0.3016490173245819
+        },
+        "full_minus_source": -1.4169678401176888e-06,
+        "sampled_minus_full": 0.004418334292421999
+      },
+      {
+        "run": "run_124",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8792743,
+        "native_area_m2": 37.63865001533165,
+        "sampled_cells": 32792,
+        "cd_source": 0.2436567,
+        "cd_full": {
+          "pressure": 0.2170563991177186,
+          "friction": 0.026598900854891857,
+          "total": 0.24365529997261046
+        },
+        "cd_sampled": {
+          "pressure": 0.2188875627425001,
+          "friction": 0.02660806078706427,
+          "total": 0.24549562352956436
+        },
+        "full_minus_source": -1.4000273895475868e-06,
+        "sampled_minus_full": 0.0018403235569539045
+      },
+      {
+        "run": "run_127",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8104112,
+        "native_area_m2": 36.01062136666408,
+        "sampled_cells": 32798,
+        "cd_source": 0.2891099,
+        "cd_full": {
+          "pressure": 0.26271550178981434,
+          "friction": 0.026393052002473466,
+          "total": 0.28910855379228784
+        },
+        "cd_sampled": {
+          "pressure": 0.2633990552904457,
+          "friction": 0.026251852296515256,
+          "total": 0.289650907586961
+        },
+        "full_minus_source": -1.3462077121384475e-06,
+        "sampled_minus_full": 0.000542353794673156
+      },
+      {
+        "run": "run_133",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9963332,
+        "native_area_m2": 36.66189678884905,
+        "sampled_cells": 32783,
+        "cd_source": 0.2897808,
+        "cd_full": {
+          "pressure": 0.2602085079818302,
+          "friction": 0.029570738164038303,
+          "total": 0.28977924614586853
+        },
+        "cd_sampled": {
+          "pressure": 0.25871918258326576,
+          "friction": 0.029448501274950887,
+          "total": 0.28816768385821667
+        },
+        "full_minus_source": -1.5538541314752408e-06,
+        "sampled_minus_full": -0.0016115622876518576
+      },
+      {
+        "run": "run_142",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8683513,
+        "native_area_m2": 33.52494354447446,
+        "sampled_cells": 32803,
+        "cd_source": 0.280461,
+        "cd_full": {
+          "pressure": 0.2518191969308176,
+          "friction": 0.028640305807170967,
+          "total": 0.2804595027379886
+        },
+        "cd_sampled": {
+          "pressure": 0.25387172685954446,
+          "friction": 0.028798215869793805,
+          "total": 0.28266994272933826
+        },
+        "full_minus_source": -1.4972620114295232e-06,
+        "sampled_minus_full": 0.0022104399913496775
+      },
+      {
+        "run": "run_158",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 10081563,
+        "native_area_m2": 36.33382445658606,
+        "sampled_cells": 32792,
+        "cd_source": 0.2614524,
+        "cd_full": {
+          "pressure": 0.234629955531391,
+          "friction": 0.026821078149239907,
+          "total": 0.2614510336806309
+        },
+        "cd_sampled": {
+          "pressure": 0.23885922761562128,
+          "friction": 0.02685680484204674,
+          "total": 0.265716032457668
+        },
+        "full_minus_source": -1.366319369089375e-06,
+        "sampled_minus_full": 0.004264998777037121
+      },
+      {
+        "run": "run_173",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8124376,
+        "native_area_m2": 36.79790228676394,
+        "sampled_cells": 32783,
+        "cd_source": 0.3081069,
+        "cd_full": {
+          "pressure": 0.28371555591008474,
+          "friction": 0.02439008094166691,
+          "total": 0.30810563685175163
+        },
+        "cd_sampled": {
+          "pressure": 0.28312658865700113,
+          "friction": 0.02446542993778228,
+          "total": 0.3075920185947834
+        },
+        "full_minus_source": -1.263148248387136e-06,
+        "sampled_minus_full": -0.0005136182569682179
+      },
+      {
+        "run": "run_180",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8295919,
+        "native_area_m2": 38.416566603968306,
+        "sampled_cells": 32798,
+        "cd_source": 0.2805724,
+        "cd_full": {
+          "pressure": 0.25512845115208904,
+          "friction": 0.025442607413489617,
+          "total": 0.2805710585655787
+        },
+        "cd_sampled": {
+          "pressure": 0.25440283439134476,
+          "friction": 0.025348203831841953,
+          "total": 0.2797510382231867
+        },
+        "full_minus_source": -1.3414344213202867e-06,
+        "sampled_minus_full": -0.0008200203423919805
+      },
+      {
+        "run": "run_187",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8720763,
+        "native_area_m2": 37.22813443109204,
+        "sampled_cells": 32783,
+        "cd_source": 0.2729599,
+        "cd_full": {
+          "pressure": 0.2476976106012251,
+          "friction": 0.025260950577996433,
+          "total": 0.27295856117922157
+        },
+        "cd_sampled": {
+          "pressure": 0.24603858809183055,
+          "friction": 0.02522659383192434,
+          "total": 0.2712651819237549
+        },
+        "full_minus_source": -1.3388207784070794e-06,
+        "sampled_minus_full": -0.0016933792554666982
+      },
+      {
+        "run": "run_188",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8232660,
+        "native_area_m2": 34.18817966276408,
+        "sampled_cells": 32805,
+        "cd_source": 0.2579303,
+        "cd_full": {
+          "pressure": 0.2301676927061452,
+          "friction": 0.02776116834767424,
+          "total": 0.25792886105381946
+        },
+        "cd_sampled": {
+          "pressure": 0.23525542855227893,
+          "friction": 0.027611982908123178,
+          "total": 0.2628674114604021
+        },
+        "full_minus_source": -1.438946180543077e-06,
+        "sampled_minus_full": 0.0049385504065826424
+      },
+      {
+        "run": "run_197",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9447968,
+        "native_area_m2": 36.92726277756808,
+        "sampled_cells": 32796,
+        "cd_source": 0.2861381,
+        "cd_full": {
+          "pressure": 0.2575158276844932,
+          "friction": 0.028620764004201764,
+          "total": 0.286136591688695
+        },
+        "cd_sampled": {
+          "pressure": 0.2578686180569286,
+          "friction": 0.02852381810568876,
+          "total": 0.2863924361626174
+        },
+        "full_minus_source": -1.5083113050207153e-06,
+        "sampled_minus_full": 0.0002558444739224064
+      },
+      {
+        "run": "run_199",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8250019,
+        "native_area_m2": 36.4956030754531,
+        "sampled_cells": 32788,
+        "cd_source": 0.2696497,
+        "cd_full": {
+          "pressure": 0.24377427813550395,
+          "friction": 0.025874077988660198,
+          "total": 0.26964835612416416
+        },
+        "cd_sampled": {
+          "pressure": 0.24693238275349327,
+          "friction": 0.025933522711106417,
+          "total": 0.2728659054645997
+        },
+        "full_minus_source": -1.3438758358352842e-06,
+        "sampled_minus_full": 0.003217549340435555
+      },
+      {
+        "run": "run_203",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 10061504,
+        "native_area_m2": 35.39544531701405,
+        "sampled_cells": 32787,
+        "cd_source": 0.2701408,
+        "cd_full": {
+          "pressure": 0.24528686866204436,
+          "friction": 0.02485265790380175,
+          "total": 0.2701395265658461
+        },
+        "cd_sampled": {
+          "pressure": 0.24004424970186342,
+          "friction": 0.024808079309226478,
+          "total": 0.2648523290110899
+        },
+        "full_minus_source": -1.2734341539033522e-06,
+        "sampled_minus_full": -0.005287197554756207
+      },
+      {
+        "run": "run_205",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8283422,
+        "native_area_m2": 37.331440711385085,
+        "sampled_cells": 32798,
+        "cd_source": 0.2760605,
+        "cd_full": {
+          "pressure": 0.25160131991033674,
+          "friction": 0.024457893828635155,
+          "total": 0.2760592137389719
+        },
+        "cd_sampled": {
+          "pressure": 0.24737019935038573,
+          "friction": 0.024474843732256696,
+          "total": 0.27184504308264246
+        },
+        "full_minus_source": -1.2862610280772735e-06,
+        "sampled_minus_full": -0.004214170656329452
+      },
+      {
+        "run": "run_207",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8078180,
+        "native_area_m2": 32.773949782728224,
+        "sampled_cells": 32778,
+        "cd_source": 0.2736512,
+        "cd_full": {
+          "pressure": 0.24408302878878335,
+          "friction": 0.02956666599762596,
+          "total": 0.2736496947864093
+        },
+        "cd_sampled": {
+          "pressure": 0.24223148701290734,
+          "friction": 0.02958949344970882,
+          "total": 0.27182098046261616
+        },
+        "full_minus_source": -1.5052135906579167e-06,
+        "sampled_minus_full": -0.001828714323793168
+      },
+      {
+        "run": "run_208",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9506641,
+        "native_area_m2": 35.81461701719934,
+        "sampled_cells": 32783,
+        "cd_source": 0.2644662,
+        "cd_full": {
+          "pressure": 0.23802435249543555,
+          "friction": 0.02644050893810842,
+          "total": 0.264464861433544
+        },
+        "cd_sampled": {
+          "pressure": 0.2371163622983714,
+          "friction": 0.026425650906792705,
+          "total": 0.2635420132051641
+        },
+        "full_minus_source": -1.3385664560106036e-06,
+        "sampled_minus_full": -0.0009228482283798467
+      },
+      {
+        "run": "run_210",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9155735,
+        "native_area_m2": 35.642683856190715,
+        "sampled_cells": 32801,
+        "cd_source": 0.2940753,
+        "cd_full": {
+          "pressure": 0.266672391657303,
+          "friction": 0.027401483164753826,
+          "total": 0.2940738748220568
+        },
+        "cd_sampled": {
+          "pressure": 0.2670291793737905,
+          "friction": 0.027394358137470435,
+          "total": 0.29442353751126094
+        },
+        "full_minus_source": -1.4251779431595502e-06,
+        "sampled_minus_full": 0.00034966268920411103
+      },
+      {
+        "run": "run_215",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7718546,
+        "native_area_m2": 36.64543401368721,
+        "sampled_cells": 32792,
+        "cd_source": 0.2783435,
+        "cd_full": {
+          "pressure": 0.25397062030593626,
+          "friction": 0.024371673437854693,
+          "total": 0.27834229374379094
+        },
+        "cd_sampled": {
+          "pressure": 0.2480562861524037,
+          "friction": 0.024362328313633396,
+          "total": 0.2724186144660371
+        },
+        "full_minus_source": -1.2062562090853213e-06,
+        "sampled_minus_full": -0.005923679277753835
+      },
+      {
+        "run": "run_222",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9512998,
+        "native_area_m2": 34.952427921756424,
+        "sampled_cells": 32794,
+        "cd_source": 0.2551448,
+        "cd_full": {
+          "pressure": 0.2276933559117632,
+          "friction": 0.027449982402103546,
+          "total": 0.25514333831386676
+        },
+        "cd_sampled": {
+          "pressure": 0.22789448166371765,
+          "friction": 0.027433994682871617,
+          "total": 0.2553284763465893
+        },
+        "full_minus_source": -1.461686133241713e-06,
+        "sampled_minus_full": 0.0001851380327225205
+      },
+      {
+        "run": "run_226",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 10048150,
+        "native_area_m2": 35.645154106375074,
+        "sampled_cells": 32790,
+        "cd_source": 0.3206788,
+        "cd_full": {
+          "pressure": 0.29405515941414617,
+          "friction": 0.02662225547708606,
+          "total": 0.32067741489123225
+        },
+        "cd_sampled": {
+          "pressure": 0.2939373971250936,
+          "friction": 0.026619981892741985,
+          "total": 0.3205573790178356
+        },
+        "full_minus_source": -1.385108767737453e-06,
+        "sampled_minus_full": -0.00012003587339665112
+      },
+      {
+        "run": "run_258",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9118296,
+        "native_area_m2": 35.55758084041481,
+        "sampled_cells": 32800,
+        "cd_source": 0.3118545,
+        "cd_full": {
+          "pressure": 0.28651903356454017,
+          "friction": 0.02533420337963077,
+          "total": 0.31185323694417094
+        },
+        "cd_sampled": {
+          "pressure": 0.2846611435664098,
+          "friction": 0.025291369818277766,
+          "total": 0.3099525133846876
+        },
+        "full_minus_source": -1.2630558290371852e-06,
+        "sampled_minus_full": -0.0019007235594833416
+      },
+      {
+        "run": "run_263",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7515248,
+        "native_area_m2": 33.55789541356228,
+        "sampled_cells": 32796,
+        "cd_source": 0.282811,
+        "cd_full": {
+          "pressure": 0.25316825198886583,
+          "friction": 0.02964119610024736,
+          "total": 0.2828094480891132
+        },
+        "cd_sampled": {
+          "pressure": 0.2530009339055293,
+          "friction": 0.029758913828412017,
+          "total": 0.2827598477339413
+        },
+        "full_minus_source": -1.5519108867989573e-06,
+        "sampled_minus_full": -4.960035517187489e-05
+      },
+      {
+        "run": "run_280",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9108135,
+        "native_area_m2": 38.71982411223408,
+        "sampled_cells": 32788,
+        "cd_source": 0.2705477,
+        "cd_full": {
+          "pressure": 0.24397444658689324,
+          "friction": 0.02657185186045622,
+          "total": 0.27054629844734945
+        },
+        "cd_sampled": {
+          "pressure": 0.2414324273388211,
+          "friction": 0.026539271798577055,
+          "total": 0.26797169913739816
+        },
+        "full_minus_source": -1.401552650548421e-06,
+        "sampled_minus_full": -0.0025745993099512976
+      },
+      {
+        "run": "run_284",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8836647,
+        "native_area_m2": 35.430057366634664,
+        "sampled_cells": 32780,
+        "cd_source": 0.2462249,
+        "cd_full": {
+          "pressure": 0.21801945420287427,
+          "friction": 0.02820395846520295,
+          "total": 0.24622341266807724
+        },
+        "cd_sampled": {
+          "pressure": 0.21603724943076627,
+          "friction": 0.028200905903225746,
+          "total": 0.244238155333992
+        },
+        "full_minus_source": -1.4873319227615145e-06,
+        "sampled_minus_full": -0.001985257334085222
+      },
+      {
+        "run": "run_290",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8549170,
+        "native_area_m2": 35.393942443717386,
+        "sampled_cells": 32792,
+        "cd_source": 0.2886074,
+        "cd_full": {
+          "pressure": 0.2621691845375923,
+          "friction": 0.026436848799635017,
+          "total": 0.28860603333722734
+        },
+        "cd_sampled": {
+          "pressure": 0.25869435515235395,
+          "friction": 0.02643405545450785,
+          "total": 0.2851284106068618
+        },
+        "full_minus_source": -1.366662772672722e-06,
+        "sampled_minus_full": -0.0034776227303655594
+      },
+      {
+        "run": "run_322",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8824781,
+        "native_area_m2": 35.29689832577231,
+        "sampled_cells": 32773,
+        "cd_source": 0.2879649,
+        "cd_full": {
+          "pressure": 0.2607806095007526,
+          "friction": 0.027182882248997193,
+          "total": 0.2879634917497498
+        },
+        "cd_sampled": {
+          "pressure": 0.2640170068801867,
+          "friction": 0.02710694890978632,
+          "total": 0.291123955789973
+        },
+        "full_minus_source": -1.4082502502454908e-06,
+        "sampled_minus_full": 0.003160464040223243
+      },
+      {
+        "run": "run_337",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8670270,
+        "native_area_m2": 35.81526928182729,
+        "sampled_cells": 32800,
+        "cd_source": 0.2748227,
+        "cd_full": {
+          "pressure": 0.24607953838937144,
+          "friction": 0.028741693728774647,
+          "total": 0.2748212321181461
+        },
+        "cd_sampled": {
+          "pressure": 0.24755740675928167,
+          "friction": 0.028737005888247128,
+          "total": 0.2762944126475288
+        },
+        "full_minus_source": -1.4678818539004546e-06,
+        "sampled_minus_full": 0.0014731805293827227
+      },
+      {
+        "run": "run_350",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8702351,
+        "native_area_m2": 37.06211322348369,
+        "sampled_cells": 32805,
+        "cd_source": 0.2931631,
+        "cd_full": {
+          "pressure": 0.2665030137759754,
+          "friction": 0.026658718957703643,
+          "total": 0.29316173273367907
+        },
+        "cd_sampled": {
+          "pressure": 0.26402528225154864,
+          "friction": 0.026638319847356498,
+          "total": 0.2906636020989051
+        },
+        "full_minus_source": -1.3672663209396418e-06,
+        "sampled_minus_full": -0.002498130634773943
+      },
+      {
+        "run": "run_354",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8746629,
+        "native_area_m2": 36.558713049054816,
+        "sampled_cells": 32790,
+        "cd_source": 0.2801001,
+        "cd_full": {
+          "pressure": 0.2539751096669727,
+          "friction": 0.026123626040054734,
+          "total": 0.2800987357070274
+        },
+        "cd_sampled": {
+          "pressure": 0.25576953267140756,
+          "friction": 0.026195106131015663,
+          "total": 0.28196463880242323
+        },
+        "full_minus_source": -1.3642929725943276e-06,
+        "sampled_minus_full": 0.0018659030953958045
+      },
+      {
+        "run": "run_363",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8293786,
+        "native_area_m2": 37.10395384675455,
+        "sampled_cells": 32781,
+        "cd_source": 0.278423,
+        "cd_full": {
+          "pressure": 0.2526872369318111,
+          "friction": 0.025734488189692498,
+          "total": 0.2784217251215036
+        },
+        "cd_sampled": {
+          "pressure": 0.2563242357399338,
+          "friction": 0.025685286886446185,
+          "total": 0.28200952262637996
+        },
+        "full_minus_source": -1.2748784963823034e-06,
+        "sampled_minus_full": 0.0035877975048763666
+      },
+      {
+        "run": "run_372",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8230342,
+        "native_area_m2": 34.11272931423295,
+        "sampled_cells": 32778,
+        "cd_source": 0.2836041,
+        "cd_full": {
+          "pressure": 0.25491665574743416,
+          "friction": 0.028685980860810978,
+          "total": 0.28360263660824514
+        },
+        "cd_sampled": {
+          "pressure": 0.2582609060126808,
+          "friction": 0.028683996300432484,
+          "total": 0.2869449023131133
+        },
+        "full_minus_source": -1.4633917548856346e-06,
+        "sampled_minus_full": 0.0033422657048681748
+      },
+      {
+        "run": "run_382",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8434120,
+        "native_area_m2": 39.34134947918799,
+        "sampled_cells": 32789,
+        "cd_source": 0.2639898,
+        "cd_full": {
+          "pressure": 0.23826487389452009,
+          "friction": 0.02572357312688754,
+          "total": 0.2639884470214076
+        },
+        "cd_sampled": {
+          "pressure": 0.2441780743917253,
+          "friction": 0.025810393936253808,
+          "total": 0.2699884683279791
+        },
+        "full_minus_source": -1.3529785923838133e-06,
+        "sampled_minus_full": 0.0060000213065715124
+      },
+      {
+        "run": "run_387",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 7972003,
+        "native_area_m2": 36.363911879427306,
+        "sampled_cells": 32789,
+        "cd_source": 0.2994331,
+        "cd_full": {
+          "pressure": 0.2755002475000869,
+          "friction": 0.023931633735494246,
+          "total": 0.2994318812355811
+        },
+        "cd_sampled": {
+          "pressure": 0.2757532014052266,
+          "friction": 0.02392227819691595,
+          "total": 0.2996754796021425
+        },
+        "full_minus_source": -1.2187644188865754e-06,
+        "sampled_minus_full": 0.00024359836656140388
+      },
+      {
+        "run": "run_405",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 9250152,
+        "native_area_m2": 33.66816550200878,
+        "sampled_cells": 32790,
+        "cd_source": 0.27041,
+        "cd_full": {
+          "pressure": 0.2446080339597488,
+          "friction": 0.025800629888089625,
+          "total": 0.27040866384783846
+        },
+        "cd_sampled": {
+          "pressure": 0.24055998907650344,
+          "friction": 0.025775114701955842,
+          "total": 0.26633510377845926
+        },
+        "full_minus_source": -1.3361521615240513e-06,
+        "sampled_minus_full": -0.004073560069379201
+      },
+      {
+        "run": "run_410",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8915663,
+        "native_area_m2": 36.037552947492614,
+        "sampled_cells": 32789,
+        "cd_source": 0.2787796,
+        "cd_full": {
+          "pressure": 0.25115661042739307,
+          "friction": 0.027621585604105353,
+          "total": 0.27877819603149845
+        },
+        "cd_sampled": {
+          "pressure": 0.24987201495944628,
+          "friction": 0.02766039529283229,
+          "total": 0.2775324102522786
+        },
+        "full_minus_source": -1.403968501567654e-06,
+        "sampled_minus_full": -0.0012457857792198546
+      },
+      {
+        "run": "run_424",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8285701,
+        "native_area_m2": 34.91487189963883,
+        "sampled_cells": 32786,
+        "cd_source": 0.2723307,
+        "cd_full": {
+          "pressure": 0.24312570406690603,
+          "friction": 0.029203475723090355,
+          "total": 0.2723291797899964
+        },
+        "cd_sampled": {
+          "pressure": 0.25048828368709203,
+          "friction": 0.02923704930831523,
+          "total": 0.27972533299540725
+        },
+        "full_minus_source": -1.5202100036026955e-06,
+        "sampled_minus_full": 0.007396153205410871
+      },
+      {
+        "run": "run_428",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8718869,
+        "native_area_m2": 37.02841238561321,
+        "sampled_cells": 32781,
+        "cd_source": 0.2638063,
+        "cd_full": {
+          "pressure": 0.2362448487499823,
+          "friction": 0.027560008361301305,
+          "total": 0.2638048571112836
+        },
+        "cd_sampled": {
+          "pressure": 0.23187869165768907,
+          "friction": 0.027473115479580236,
+          "total": 0.2593518071372693
+        },
+        "full_minus_source": -1.4428887163964177e-06,
+        "sampled_minus_full": -0.0044530499740143
+      },
+      {
+        "run": "run_429",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8850249,
+        "native_area_m2": 34.81741796015449,
+        "sampled_cells": 32789,
+        "cd_source": 0.3004557,
+        "cd_full": {
+          "pressure": 0.27500893238829727,
+          "friction": 0.025445418348509344,
+          "total": 0.3004543507368066
+        },
+        "cd_sampled": {
+          "pressure": 0.2744279382110173,
+          "friction": 0.025468597731545462,
+          "total": 0.29989653594256277
+        },
+        "full_minus_source": -1.3492631933953447e-06,
+        "sampled_minus_full": -0.0005578147942438272
+      },
+      {
+        "run": "run_436",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8888788,
+        "native_area_m2": 35.97255417869198,
+        "sampled_cells": 32780,
+        "cd_source": 0.2968229,
+        "cd_full": {
+          "pressure": 0.2703628844704006,
+          "friction": 0.02645869660872353,
+          "total": 0.2968215810791241
+        },
+        "cd_sampled": {
+          "pressure": 0.27315633111634946,
+          "friction": 0.026458441996673642,
+          "total": 0.2996147731130231
+        },
+        "full_minus_source": -1.318920875903462e-06,
+        "sampled_minus_full": 0.0027931920338989946
+      },
+      {
+        "run": "run_472",
+        "preprocessing_version": 3,
+        "requested_points": 32768,
+        "cells": 8284907,
+        "native_area_m2": 34.7053580544204,
+        "sampled_cells": 32780,
+        "cd_source": 0.2618401,
+        "cd_full": {
+          "pressure": 0.23209404912462026,
+          "friction": 0.029744536448684848,
+          "total": 0.2618385855733051
+        },
+        "cd_sampled": {
+          "pressure": 0.23487765050358717,
+          "friction": 0.02977552274600133,
+          "total": 0.2646531732495885
+        },
+        "full_minus_source": -1.5144266949373986e-06,
+        "sampled_minus_full": 0.0028145876762833977
+      }
+    ]
+  }
+}
