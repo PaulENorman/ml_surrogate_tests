@@ -101,8 +101,8 @@ def evaluate(model, paths: list[Path], device: torch.device,
 
 def train(prepared: Path, output: Path, split: str, max_per_split: int,
           epochs: int = 20, lr: float = 1e-4, closure_limit: float = 0.001,
-          sampled_limit: float = 0.01, on_checkpoint=None) -> dict:
-    from physicsnemo.models.transolver import Transolver
+          sampled_limit: float = 0.01, on_checkpoint=None,
+          model_family: str = "physicsnemo++") -> dict:
 
     if not torch.cuda.is_available():
         raise RuntimeError("A CUDA GPU is required for the Modal training job")
@@ -131,10 +131,19 @@ def train(prepared: Path, output: Path, split: str, max_per_split: int,
     torch.manual_seed(42)
     torch.cuda.manual_seed_all(42)
     device = torch.device("cuda")
-    model = Transolver(functional_dim=3, embedding_dim=3, out_dim=5,
-                       structured_shape=None, unified_pos=False,
-                       n_layers=4, n_hidden=128, n_head=4, slice_num=32,
-                       plus=True, use_te=False).to(device)
+    if model_family == "physicsnemo++":
+        from physicsnemo.models.transolver import Transolver
+        model = Transolver(functional_dim=3, embedding_dim=3, out_dim=5,
+                           structured_shape=None, unified_pos=False,
+                           n_layers=4, n_hidden=128, n_head=4, slice_num=32,
+                           plus=True, use_te=False).to(device)
+        model_name = "PhysicsNeMo Transolver++"
+    elif model_family == "transolver3":
+        from transolver3_model import SurfaceTransolver3
+        model = SurfaceTransolver3().to(device)
+        model_name = "Official Transolver-3 (matched capacity)"
+    else:
+        raise ValueError(f"Unsupported model family: {model_family}")
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
     output.mkdir(parents=True, exist_ok=True)
     best = float("inf")
@@ -162,7 +171,8 @@ def train(prepared: Path, output: Path, split: str, max_per_split: int,
         if score < best:
             best = score
             torch.save({"model": model.state_dict(), "epoch": epoch + 1,
-                        "split": split, "max_per_split": max_per_split}, output / "best.pt")
+                        "split": split, "max_per_split": max_per_split,
+                        "model_family": model_family}, output / "best.pt")
             if on_checkpoint is not None:
                 on_checkpoint(epoch + 1)
         print(json.dumps({"epoch": epoch + 1, "train_loss": history[-1]["train_loss"],
@@ -171,7 +181,7 @@ def train(prepared: Path, output: Path, split: str, max_per_split: int,
                           "val_cp_mae": val["mean_cp_mae"]}), flush=True)
     checkpoint = torch.load(output / "best.pt", map_location=device, weights_only=True)
     model.load_state_dict(checkpoint["model"])
-    result = {"model": "PhysicsNeMo Transolver++", "split": split,
+    result = {"model": model_name, "model_family": model_family, "split": split,
               "loss": "area-weighted Cp MSE + 0.25 Cf MSE (x1000) + 2 Huber(Cd_direct) + "
                       "2 Huber(Cd_integrated) after 5 warmup epochs",
               "max_per_split": max_per_split, "best_epoch": checkpoint["epoch"],
