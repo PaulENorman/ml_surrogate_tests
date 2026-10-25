@@ -33,6 +33,31 @@ def forward_case(model, case: dict) -> dict:
             "friction": friction, "integrated": pressure + friction}
 
 
+@torch.no_grad()
+def export_test_fields(model, paths: list[Path], device: torch.device, output: Path) -> dict:
+    """Keep sampled surface truth and predictions for later plotting without a GPU."""
+    model.eval()
+    output.mkdir(parents=True, exist_ok=True)
+    records = []
+    for path in paths:
+        case = load_case(path, device)
+        pred = forward_case(model, case)
+        arrays = {key: case[key].cpu().numpy()
+                  for key in ("xyz", "normals", "area", "a_ref", "cd")}
+        arrays.update(cp_true=case["cp"].cpu().numpy(), cp_pred=pred["cp"].cpu().numpy(),
+                      cf_true=case["cf"].cpu().numpy(), cf_pred=pred["cf"].cpu().numpy(),
+                      cd_direct=pred["direct"].cpu().numpy(),
+                      cd_integrated=pred["integrated"].cpu().numpy())
+        np.savez_compressed(output / f"{path.stem}.npz", **arrays)
+        records.append({"run": path.stem, "sampled_cells": int(len(arrays["area"]))})
+    metadata = {"representation": "area-weighted sampled native cell centers",
+                "cp": "pressure coefficient", "cf": "wall shear / dynamic pressure",
+                "cases": records}
+    (output / "manifest.json").write_text(json.dumps(metadata, indent=2))
+    return {"directory": output.name, "cases": len(records),
+            "representation": metadata["representation"]}
+
+
 def case_loss(pred: dict, case: dict, integrated_weight: float) -> torch.Tensor:
     import torch.nn.functional as F
 
@@ -191,5 +216,13 @@ def train(prepared: Path, output: Path, split: str, max_per_split: int,
               "sampling_max_abs_cd": max(sampling_error), "history": history,
               "validation": evaluate(model, paths["val"], device, baseline_cd),
               "test": evaluate(model, paths["test"], device, baseline_cd)}
+    result["configuration"] = {"epochs": epochs, "seed": 42, "learning_rate": lr,
+                               "layers": 4, "hidden_channels": 128, "attention_heads": 4,
+                               "slices": 32, "requested_cells": report["points_per_case"],
+                               "cases": {kind: len(value) for kind, value in paths.items()}}
+    export_start = time.perf_counter()
+    result["test_fields"] = export_test_fields(model, paths["test"], device,
+                                               output / "test_fields")
+    result["field_export_seconds"] = time.perf_counter() - export_start
     (output / "report.json").write_text(json.dumps(result, indent=2))
     return {key: value for key, value in result.items() if key not in {"history", "test", "validation"}}

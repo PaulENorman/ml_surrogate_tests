@@ -1,0 +1,65 @@
+{
+  "selection": "lowest, median and highest absolute integrated Cd error on test set",
+  "representation": "sampled native cell centers; not a full-mesh field prediction",
+  "vehicles": [
+    {
+      "run": "run_280",
+      "rank": "Lowest Cd error",
+      "cd_abs_error": 0.00010693073272705078
+    },
+    {
+      "run": "run_387",
+      "rank": "Median Cd error",
+      "cd_abs_error": 0.006469815969467163
+    },
+    {
+      "run": "run_173",
+      "rank": "Highest Cd error",
+      "cd_abs_error": 0.03300601243972778
+    }
+  ],
+  "color_limits": {
+    "cp": {
+      "field": [
+        -1.2196548914909362,
+        0.8942874628305434
+      ],
+      "error": [
+        -0.4360169768333435,
+        0.4360169768333435
+      ],
+      "field_quantiles": [
+        0.005,
+        0.995
+      ],
+      "full_field_range": [
+        -2.825026273727417,
+        1.0142048597335815
+      ],
+      "absolute_error_quantile": 0.99,
+      "full_max_absolute_error": 2.6403558254241943,
+      "saturated_fraction": 0.010004066693777958
+    },
+    "cf_x": {
+      "field": [
+        -0.008591475593857468,
+        0.001650587060139513
+      ],
+      "error": [
+        -0.002363163512200117,
+        0.002363163512200117
+      ],
+      "field_quantiles": [
+        0.005,
+        0.995
+      ],
+      "full_field_range": [
+        -0.01936027593910694,
+        0.00841938704252243
+      ],
+      "absolute_error_quantile": 0.99,
+      "full_max_absolute_error": 0.011505967006087303,
+      "saturated_fraction": 0.010004066693777958
+    }
+  }
+}

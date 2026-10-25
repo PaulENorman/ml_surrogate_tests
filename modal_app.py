@@ -13,8 +13,11 @@ volume = modal.Volume.from_name("drivaer-surface-ml", create_if_missing=True)
 base = (modal.Image.debian_slim(python_version="3.11")
         .pip_install("numpy==2.2.6", "pyvista==0.46.4", "vtk==9.5.2")
         .workdir(REMOTE))
-source = dict(remote_path=REMOTE, ignore=[".git", ".venv", "data", "__pycache__"])
+source = dict(remote_path=REMOTE, ignore=[".git", ".venv", "data", "figures", "__pycache__"])
 cpu_image = base.add_local_dir(ROOT, **source)
+ingest_image = (base.pip_install("huggingface_hub==0.34.4", "hf-xet==1.1.8")
+                .env({"HF_HUB_DISABLE_PROGRESS_BARS": "1", "HF_XET_HIGH_PERFORMANCE": "1"})
+                .add_local_dir(ROOT, **source))
 gpu_image = base.pip_install("nvidia-physicsnemo==2.2.0", "torch==2.14.1",
                              "torchvision==0.29.1").add_local_dir(ROOT, **source)
 # Official upstream implementation is fetched at build time rather than copied
@@ -29,7 +32,7 @@ gpu_image_t3 = (base.apt_install("git")
 app = modal.App("potential-flow-drivaer-surface")
 
 
-@app.function(image=cpu_image, volumes={str(DATA): volume}, timeout=14400, cpu=4)
+@app.function(image=ingest_image, volumes={str(DATA): volume}, timeout=14400, cpu=4)
 def ingest_job(split: str, max_per_split: int):
     from data import ingest
 
@@ -73,6 +76,77 @@ def prewarm_job(split: str, points_per_case: int):
                               points_per_case, progress=progress)
     volume.commit()
     return {"ready_and_prepared": count}
+
+
+@app.function(image=cpu_image, volumes={str(DATA): volume}, timeout=3600,
+              cpu=2, memory=16384, max_containers=8, retries=1)
+def prepare_batch_job(runs: list[str], split: str, points_per_case: int):
+    import time
+    from preprocess import prepare_one
+
+    # Reused workers must see files committed by the downloader since their last batch.
+    volume.reload()
+    for index, run in enumerate(runs, 1):
+        start = time.perf_counter()
+        prepare_one(DATA / "raw", DATA / "prepared" / split, run, points_per_case)
+        print(f"Prepared {run} in {time.perf_counter() - start:.1f}s", flush=True)
+        if index % 5 == 0:
+            volume.commit()
+    volume.commit()
+    return len(runs)
+
+
+@app.function(image=cpu_image, volumes={str(DATA): volume}, timeout=14400, cpu=1, memory=2048)
+def prepare_streaming_job(split: str, points_per_case: int):
+    import json
+    import time
+    from data import selected_ids
+    from preprocess import PREP_VERSION
+
+    volume.reload()
+    manifest = json.loads((DATA / "raw/splits/manifest.json").read_text())
+    selected = selected_ids(manifest, split)
+    runs = [run for group in selected.values() for run in group]
+    expected = len(runs)
+    out = DATA / "prepared" / split
+    previous = None
+    while True:
+        volume.reload()
+        available, pending = 0, []
+        for run in runs:
+            number = run.removeprefix("run_")
+            directory = DATA / "raw" / run
+            if not all((directory / name).is_file() for name in
+                       (f"boundary_{number}.vtp", f"boundary_cell_area_{number}.npy",
+                        f"geo_ref_{number}.csv", f"force_mom_{number}.csv")):
+                continue
+            available += 1
+            metadata = out / f"{run}.json"
+            if metadata.is_file() and (out / f"{run}.npz").is_file():
+                record = json.loads(metadata.read_text())
+                if (record.get("preprocessing_version") == PREP_VERSION
+                        and record.get("requested_points") == points_per_case):
+                    continue
+            pending.append(run)
+        state = (available, available - len(pending))
+        if state != previous:
+            print(f"Ready {available}/{expected}; prepared {state[1]}/{expected}", flush=True)
+            previous = state
+        if pending:
+            batches = [pending[i::8] for i in range(min(8, len(pending)))]
+            list(prepare_batch_job.map(batches, kwargs={"split": split,
+                                                       "points_per_case": points_per_case}))
+            continue
+        if available == expected:
+            result = {"split": split, "max_per_split": 0, "points_per_case": points_per_case,
+                      "cases": {kind: [json.loads((out / f"{run}.json").read_text())
+                                       for run in group] for kind, group in selected.items()}}
+            (out / "closure.json").write_text(json.dumps(result, indent=2))
+            volume.commit()
+            return {kind: {"n": len(rows), "max_abs_cd_closure":
+                           max(abs(row["full_minus_source"]) for row in rows)}
+                    for kind, rows in result["cases"].items()}
+        time.sleep(30)
 
 
 @app.function(image=gpu_image, volumes={str(DATA): volume}, timeout=14400,
@@ -120,6 +194,11 @@ def prepare(split: str = "super_scarce", max_per_split: int = 2,
 @app.local_entrypoint()
 def prewarm(split: str = "super_scarce", points_per_case: int = 32768):
     print(prewarm_job.remote(split, points_per_case))
+
+
+@app.local_entrypoint()
+def prepare_streaming(split: str = "full", points_per_case: int = 32768):
+    print(prepare_streaming_job.remote(split, points_per_case))
 
 
 @app.local_entrypoint()

@@ -30,8 +30,17 @@ def download_file(relative: str, root: Path) -> Path:
         return target
     target.parent.mkdir(parents=True, exist_ok=True)
     partial = target.with_name(target.name + ".partial")
+    try:
+        from huggingface_hub import hf_hub_download
+    except ImportError:
+        hf_hub_download = None
     for attempt in range(3):
         try:
+            if hf_hub_download is not None:
+                hf_hub_download(repo_id="neashton/drivaerml", repo_type="dataset",
+                                filename=relative, local_dir=root, token=False)
+                partial.unlink(missing_ok=True)
+                return target
             urlretrieve(f"{BASE}/{relative}", partial)
             break
         except Exception:
